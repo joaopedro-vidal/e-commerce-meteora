@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Inter+Tight&family=Krona+One&family=Montserrat:wght@400;600&family=Roboto&family=Titillium+Web&display=swap');
+
+:root{
+    --background--color: #000000;
+    --letter--color:#ffffff;
+    --placeholder--color: #6c757d;
+    --placeholder--size: 0.9375rem;
+    --line-height: 1.5rem;
+    --font--header: 'Inter', sans-serif;
+    --fontsize--header: 1rem;
+    --fontsize--placeholder: 0.9375rem;
+    --fontstyle--header: normal;
+    --fontweight--header: 400;
+    --lineheight--header: 1.4375rem;
+}
+
+/* Root para a reponsividade 768px*/
+:root{
+
+    --fontsize--header--768px: 0.8125rem;
+    --lineheight--header--768px: 1.25rem;
+}
+
+html{
+  font-family: var(--font--header);
+}
+
+
+@media(max-width: 1440px){
+
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100; /* Certifique-se de que a barra de navegação tenha um índice de camada maior do que o carousel */
+  }
+
+   .container__header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background--color);
+    height: 3.625rem;
+    padding: 0 1.44rem;
+   }
+   
+   .icon_header_hamburguer{
+    display: none;
+   }
+
+   .icon_close_menu{
+    display: none;
+   }
+
+   .menu_header{
+    order: 0;
+    margin-right: auto;
+    padding-left: 0;
+   }
+
+   .logo_item{
+    width: 8.3rem;
+    height: 2rem;
+   }
+
+   .menu_header a{
+    text-decoration: none;
+    color: var(--letter--color);
+    padding-left: 2rem;
+    font-size: var(--fontsize--header);
+    line-height: 1.4375rem;
+   }
+
+   #caixa_pesquisa{
+    margin-right: 1rem;
+    width: 10.625rem;
+    height: 2.375rem;
+    border: 1px solid var(--letter--color);
+   }
+
+   .button_header{
+    appearance: none;
+    padding: 0.5625rem 0.75rem;
+    background-color: var(--background--color);
+    border: 1px solid var(--letter--color);
+    color: var(--letter--color);
+    font-size: var(--fontsize--header);
+    line-height: var(--lineheight--header);
+   }
+
+   .menu_header a:hover, .button_header:hover{
+    cursor: pointer;
+   }
+
+    input::placeholder{
+        color: var(--placeholder--color);
+        font-size: var(--fontsize--placeholder);
+        font-family: var(--font--header);
+        font-style: var(--fontstyle--header);
+        font-weight: var(--fontweight--header);
+        line-height: var(--line-height);
+        text-align: center;
+    }
+    
+    .bd-example{
+      margin-top: 3.5rem;
+    }
+   
+    ._banner_1_tablet, ._banner_2_tablet, ._banner_3_tablet, ._banner_1_mobile, ._banner_2_mobile, ._banner_3_mobile{
+      display: none;
+    }
+
+  .carousel_h1_proprio{
+    font-size: 3rem;
+    font-family: var(--font--header);
+  }
+
+  .carousel_p_proprio{
+    font-size: 1.25rem;
+    margin-bottom: 10%;
+  }
+
+    /*concertar as legendas e organizar as classes dos containers*/
+  
+}
+
+/*Seguir as coisas do FIGMA, porque esta correto*/
+@media(max-width: 900px){
+
+  .container__header{
+    padding: 0 0.8rem;
+  }
+  
+  .logo_item{
+    width: 6.2rem;
+    height: 1.5rem;
+  }
+
+  .menu_header a{
+    font-size: var(--fontsize--header--768px);
+    line-height: var(--lineheight--header--768px);
+    padding-left: 1rem;
+  }
+
+  #caixa_pesquisa{
+    width: 9rem;
+    border: 1px solid var(--letter--color);
+  }
+
+  .button_header{
+    font-size: var(--fontsize--header--768px);
+    line-height: var(--lineheight--header--768px);
+  }
+
+  ._banner_1, ._banner_2, ._banner_3{
+    display:none;
+  }
+
+  ._banner_1_tablet{
+    display: flex;
+    margin-top: -1px;
+  }
+
+  ._banner_2_tablet, ._banner_3_tablet{
+    display: flex;
+  }
+
+  .carousel_h1_proprio{
+    font-size: 2rem;
+  }
+
+  .carousel_p_proprio{
+    font-size: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 30%;
+  }
+}
+
+
+@media(max-width: 700px){
+/*alterando o display para ver com o JS como vai ficar  display =inline-flex*/
+  .menu_header {
+    display: none;
+    position: absolute;
+    margin-top: 11rem;
+    background-color: #343A40;
+    padding: 2.625rem 1.5rem 1rem 1.5rem;
+    right: 0;
+    margin-top: 8rem;
+    z-index: 999;
+  }
+/*alterando o display para ver com o JS como vai ficar  display =inline-flex*/
+  .menu_header a{
+    display: block;
+    color: var(--letter--color);
+    padding: 0.5rem;
+    text-align: left;
+    border-top: 1px solid var(--letter--color);
+    font-size: var(--fontsize--header);
+    line-height: var(--fontsize--header); 
+  }
+
+  .icon_header_hamburguer{
+    display: flex;
+    color: #daff01; 
+    order: 1; 
+    cursor: pointer;
+  }
+/*alterando o display para ver com o JS como vai ficar display =inline-flex*/
+  .icon_close_menu{
+    display: inline-flex;
+    width: 1.125rem;
+    height: 1.0625rem;
+    color: #daff01;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2.5rem 0 0 6rem;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+   }
+
+  #menu_a_home{
+    color: #daff01;
+    border: none;
+   }
+
+   .carousel_h1_proprio{
+    font-size: 1.5rem;
+   }
+
+   .carousel_p_proprio{
+    font-size: 0.8rem;
+   }
+  
+}
+
+@media(max-width: 400px){
+
+  .form_input_header{
+    position: absolute;
+    padding-top: 8rem;
+    padding-left: 1rem;
+  }
+  
+  #caixa_pesquisa{
+    width: 14.10006rem;
+    height: 2.375rem;
+    border: 1px solid var(--background--color);
+  }
+
+  .button_header{
+    width: 5.5rem;
+    height: 2.3rem;
+    margin-left: -0.5rem;
+    border: 1px solid var(--background--color);
+    background-color: var(--letter--color);
+    color: var(--background--color);
+    font-weight: 500;
+    letter-spacing: 0.002856rem;
+  }
+
+  input::placeholder{
+    font-size: var(--fontsize--header--768px);
+    font-weight: 400;
+  }
+
+  .bd-example{
+    margin-top: 8rem;
+  }
+
+  ._banner_1_tablet, ._banner_2_tablet, ._banner_3_tablet{
+    display: none;
+  }
+
+  ._banner_1_mobile, ._banner_2_mobile, ._banner_3_mobile{
+    display: flex;
+  }
+
+  .carousel_h1_proprio{
+    font-size: 2rem;
+    text-align: center;
+
+  }
+
+  .carousel_p_proprio{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+}
+

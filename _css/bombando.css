@@ -1,0 +1,110 @@
+:root{
+    --font-sizeh3: 1rem;
+    --font-familyh3: Inter;
+    --font-weight: 700;
+    --font-weightBtn: 500;
+    --line-weight: 1.44rem;
+    --font-sizeP: 0.83rem;
+    --line-weightO: 1.25rem;
+    --color-h3andP: #212529;
+    --background-buttom: #9353FF;
+    --color--letraBtn: #FFFFFF;
+    --font-sizeh1: 2rem;
+}
+
+@media(max-width: 1440px){
+
+
+    .container__bombando{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+        margin-top: 3rem;
+        width: 100%;
+    }
+
+    .produtos_bombando ul{
+        display:flex;
+        flex-wrap: wrap;
+        gap: 1.875rem;
+        justify-content: center;
+        margin-top: -1rem;
+        
+    }
+    .produtos_bombando li{
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(0, 0, 0, 0.13);
+    }
+
+    .produtos_bombando img{
+        width: 21.875rem;
+        height: 26.375rem;
+        flex-shrink: 0;     
+    }
+
+    .produtos_bombando h3{
+        margin-top: 0.5rem;
+        margin-left: 1rem;
+        font-size: var(--font-sizeh3);
+        font-family: var(--font-familyh3);
+        font-weight: var(--font-weight);
+        line-height: var(--line-weight);
+    }
+
+    .produtos_bombando p{
+        margin-top: 0.4rem;
+        margin-left: 1rem;
+        text-align: left;
+        color: var(--color-h3andP);
+        font-size: var(--font-sizeP);
+        font-family: var(--font-familyh3);
+        line-height: var(--line-weightO);
+    }
+
+    .bombando_h1{
+        color: var(--color-h3andP);
+        text-align: center;
+        font-size: var(--font-sizeh1);
+        margin-left: 0rem;
+    }
+    
+    .btn_bombando{
+        display: flex;
+        padding: 0.5625rem 1rem;
+        gap: 0.625rem; 
+        width: 6.35rem; 
+        height: 2.32rem;
+        margin: 1rem 0 1rem 1rem;
+        border: none;
+        background-color: var(--background-buttom);
+        color: var(--color--letraBtn);
+        justify-content: center;
+        font-size: var(--font-sizeh3);
+        font-family: var(--font-familyh3);
+        font-style: normal;
+        font-weight: var(--font-weightBtn);
+        line-height: normal;
+        letter-spacing: 0.03rem;
+    }
+}
+
+@media(max-width: 1115px){
+
+    .container__bombando{
+        margin-top: 9rem;
+    }
+    .produtos_bombando img{
+        width: 20.625rem;
+        height: 24.3125rem;
+        object-fit: cover;
+    }
+}
+
+@media(max-width: 688px){
+
+    .container__bombando{
+        margin-top: 23rem;
+    }
+}

@@ -1,0 +1,112 @@
+:root{
+    --background-facilidades: #000;
+    --color-h1: #FFFFFF;
+    --color-h2: #DAFF01;
+    --fontsize-h1: 2rem;
+    --font-family-h1: Inter;
+    --font-style-h1: normal;
+    --font-weight-h1: 500;
+    --line-height-h1: normal;
+    --font-size-h2: 0.8125rem;
+    --font-weight-h2: 400;
+    --line-weight-h2: 1.25rem;
+    --fontsize-p: 0.8125rem;
+    --font-weight-p: 400;
+    --line-weight-p: 1.25rem;
+}
+
+@media(max-width: 1440px){
+
+   .container_facilidades{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    background-color: var(--background-facilidades);
+    padding: 2.5rem 0;
+    }
+
+    .box_facilidade{
+       display: flex;
+       width: 100%;
+       justify-content: center;
+       align-content: center;
+       gap: 2rem; 
+    }
+
+    .box_imagens{
+        margin-right: -30px;
+    }
+
+    .box_termos{
+        margin-left: 5px;
+
+    }
+
+    .h1_facilidade{
+        color:var(--color-h1);
+        font-size: var(--fontsize-h1);
+        font-family: var(--font-family-h1);
+        font-style: var(--font-style-h1);
+        font-weight: var(--font-weight-h1);
+        line-height: var(--line-height-h1);
+    }
+    .h2_facilidade{
+       text-align: left;
+        color:var(--color-h2);
+        font-size:var(--font-size-h2);
+        font-family: var(--font-family-h1);
+        font-weight: var(--font-weight-h2);
+        line-height: var(--line-weight-h2);
+    }
+    
+    .p_facilidades{
+        padding-top: 0.5rem;
+        color:var(--color-h1);
+        font-size: var(--fontsize-p);
+        font-family: var(--font-family-h1);
+        font-weight: var(--font-weight-p);
+        line-height: var(--line-weight-p);
+    }
+}
+
+@media(max-width: 895px){
+
+    .container_facilidades{
+        padding: 1rem 0;
+    }
+
+    .box_facilidade {
+        flex-direction: column; /* Empilhar elementos verticalmente */
+        align-items:center; /* Alinhar elementos à esquerda */
+        gap: 1rem; /* Espaçamento entre os elementos empilhados */
+        height: auto; /* Ajustar altura automaticamente */
+         
+    }
+    
+    .box_termos {
+        width: 100%; /* Ocupar toda a largura disponível */
+        text-align: center; /* Alinhar o texto ao centro */
+        justify-content: center; 
+    }
+
+    .box_imagens{
+        margin: 0;
+    }
+
+    .h1_facilidade{
+        text-align: center;
+    }
+
+    .h2_facilidade{
+        text-align: center;
+    }
+
+    .p_facilidades{
+        margin-top: -0.5rem;
+    }
+ 
+ 
+   
+}
