@@ -1,6 +1,54 @@
 
-
 .modal-body{
     display: flex;
     width: 100%;
+    font-family: 'Inter', sans-serif;
 }
+
+.container-imagem-modal{
+    width: 50%;
+}
+
+.produto-modal{
+    padding: 0 1rem;
+}
+
+.produto-modal h1{
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    color: #212529;
+}
+
+.produto-modal p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding: 1.5rem 0;    
+}
+
+.produto-modal h2{
+    color: #212529;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: left;
+    border-top: 1px solid #000;
+    padding-top: 1.5rem;
+}
+
+.produto-modal h3{
+    font-size: 0.8125rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    padding: 1rem 0;
+}
+
+.p_borda_comolinha{
+    border-bottom: 1px solid #D8D8D8;
+}
+
+.radioinput_cores_modal input, .radioinput_tamanho_modal input{
+    display: block;
+    margin-bottom: 0.5rem;  
+}
+
