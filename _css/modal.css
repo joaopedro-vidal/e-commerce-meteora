@@ -1,4 +1,27 @@
 
+.modal-header{
+    background-color: #000;
+}
+
+.modal-title{
+    width: 100%;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-left: 1rem;
+}
+
+.material-symbols-outlined{
+    color: #ADFF2F;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.close{
+    color: white;
+    font-size: 2rem;
+}
+
 .modal-body{
     display: flex;
     width: 100%;
@@ -30,7 +53,7 @@
 .produto-modal h2{
     color: #212529;
     font-size: 1.25rem;
-    font-weight: 500;
+    font-weight: bold;
     text-align: left;
     border-top: 1px solid #000;
     padding-top: 1.5rem;
@@ -38,17 +61,39 @@
 
 .produto-modal h3{
     font-size: 0.8125rem;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 1.25rem;
     padding: 1rem 0;
+}
+
+.h3_com_borda_modal{
+    border-top: 1px solid #D8D8D8;
 }
 
 .p_borda_comolinha{
     border-bottom: 1px solid #D8D8D8;
 }
 
+
 .radioinput_cores_modal input, .radioinput_tamanho_modal input{
-    display: block;
-    margin-bottom: 0.5rem;  
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem; 
+}
+
+.radioinput_cores_modal input{
+    margin-left: 1.5rem;
+}
+
+#radiocolor3{
+    margin-left: 0.5rem;
+}
+
+.radioinput_cores_modal label, .radioinput_tamanho_modal label{
+    font-size: 0.8125rem; 
+    font-weight: 400;
+    padding: 0 1rem 1rem 0;
+    text-align: center;
+    line-height: 1.25rem;
 }
 
