@@ -1,5 +1,6 @@
 
 .modal-header{
+    display: flex;
     background-color: #000;
 }
 
@@ -29,7 +30,9 @@
 }
 
 .container-imagem-modal{
+    display: flex;
     width: 50%;
+    object-fit: cover;
 }
 
 .produto-modal{
@@ -79,10 +82,15 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5rem; 
+    cursor: pointer;
 }
 
 .radioinput_cores_modal input{
-    margin-left: 1.5rem;
+    margin-left: 2rem;
+}
+
+#radiocolor1{
+    margin-left: 1.4rem;
 }
 
 #radiocolor3{
@@ -97,3 +105,70 @@
     line-height: 1.25rem;
 }
 
+.radioinput_cores_modal input[type="radio"], .radioinput_tamanho_modal input[type="radio"] {
+    /* Estilos comuns a todos os inputs */
+    appearance: none;
+    outline: none;
+    width: 0.9375rem;
+    height: 0.9375rem;
+    border:  2px solid #CCC;
+    border-radius: 50%;
+}
+
+.radioinput_cores_modal input[type="radio"]:checked, .radioinput_tamanho_modal input[type="radio"]:checked {
+        /* Estilos comuns a todos os inputs selecionados */
+     border:  3px solid  #9353FF;
+        
+}
+
+#radiocolor1{
+    background-color: #62d1ec;
+}
+
+#radiocolor2{
+    background-color: #327b00;
+}
+
+#radiocolor3{
+    background-color: #000;
+}
+
+.btn_proprio_modal{
+    background-color: #9353FF;
+    border: none;
+    border-radius: 0; 
+}
+
+.btn_proprio_modal:active, .btn_proprio_modal:focus, .btn_proprio_modal:hover{
+    background-color:#ADFF2F;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.p_modal_novidades{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media(max-width: 991px){
+    .modal-body{
+        flex-direction: column;
+        
+    }
+
+    .container-imagem-modal{
+       width: 100%;
+        justify-content: center;
+    }
+
+    .container-imagem-modal img{
+       display: flex;
+       max-width:100%;
+       height: auto;
+    }
+
+    .produto-modal{
+        margin-top: 1rem;
+    }
+}
+ 

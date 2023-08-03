@@ -130,35 +130,35 @@
             <h3>Calça Alfaiataria</h3>
             <p>Modelo Wide Leg alfaiataria em linho. Uma peça<br> pra vida toda!</p>
             <h3>R$ 180,00</h3>
-            <button class="btn_bombando" value="Ver mais">Ver mais</button>
+            <button type="button" class="btn btn-primary btn_bombando" data-toggle="modal" data-target="#exampleModal2" data-whatever="@mdo">Ver mais</button>
           </li>
           <li>
             <img src="_assets/_imagens/_produtosbombando/Tenis.png" alt="">
             <h3>Tênis Chunky</h3>
             <p>Snicker casual com solado mais alto e modelagem<br> robusta. Modelo unissex.</p>
             <h3>R$ 250,00</h3>
-            <button class="btn_bombando" value="Ver mais">Ver mais</button>
+            <button type="button" class="btn btn-primary btn_bombando" data-toggle="modal" data-target="#exampleModal3" data-whatever="@mdo">Ver mais</button>
           </li>
           <li>
             <img src="_assets/_imagens/_produtosbombando/Jaqueta.png" alt="">
             <h3>Jaqueta Jeans</h3>
             <p>Modelo unissex oversized com gola de camurça.<br> Atemporal e autêntica!</p>
             <h3>R$ 150,00</h3>
-            <button class="btn_bombando" value="Ver mais">Ver mais</button>
+            <button type="button" class="btn btn-primary btn_bombando" data-toggle="modal" data-target="#exampleModal4" data-whatever="@mdo">Ver mais</button>
           </li>
           <li>
             <img src="_assets/_imagens/_produtosbombando//óculos.png" alt="">
             <h3>Óculos Redondo</h3>
             <p>Armação metálica em grafite com lentes<br> arredondadas. Sem erro!</p>
             <h3>R$ 120,00</h3>
-            <button class="btn_bombando" value="Ver mais">Ver mais</button>
+            <button type="button" class="btn btn-primary btn_bombando" data-toggle="modal" data-target="#exampleModal5" data-whatever="@mdo">Ver mais</button>
           </li>
           <li>
             <img src="_assets/_imagens/_produtosbombando/Bolsa.png" alt="">
             <h3>Bolsa coringa</h3>
             <p>Bolsa camel em couro sintético de alta duração.<br> Ideal para acompanhar você por uma vida!</p>
             <h3>R$ 120,00</h3>
-            <button class="btn_bombando" value="Ver mais">Ver mais</button>
+            <button type="button" class="btn btn-primary btn_bombando" data-toggle="modal" data-target="#exampleModal6" data-whatever="@mdo">Ver mais</button>
           </li>
         </ul>
       </nav>
@@ -197,7 +197,7 @@
         <p class="p_novidades">Quer receber nossas novidades, promoções exclusivas e 10% OFF na<br> primeira compra? <strong>Cadastre-se!</strong></p>
       
       <div class="input_container">
-        <input type="text" name="" id="caixa_email" placeholder="Digite seu e-mail"><input type="button" class="btn_novidades" value="Enviar">
+        <input type="text" name="" id="caixa_email" placeholder="Digite seu e-mail"><button type="button" class="btn btn-primary btn_novidades" data-toggle="modal" data-target="#exampleModalNews">Enviar</button>
       </div>
 
     </div>
@@ -276,12 +276,396 @@
           </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send message</button>
+        <button type="button" class="btn btn-primary btn_proprio_modal">Adicionar à sacola</button>
       </div>
     </div>
   </div>
 </div>
+
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="material-symbols-outlined">
+          check_circle
+        </span>
+        <h5 class="modal-title" id="exampleModalLabel">  Confira detalhes sobre o produto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="container-imagem-modal">
+            <img src="_assets/_imagens/_produtosbombando/Calça.png" alt="Calça da categoria bombando">
+          </div>
+          <div class="produto-modal">
+            <h1>Calça Alfaiataria</h1>
+            <p>Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!</p>
+            <h2>R$ 180,00</h2>
+            <p class="text-black-50 p_borda_comolinha">Vendido e entregue por Riachuelo</p>
+
+            <h3>Cores:</h3>
+               <div class="radioinput_cores_modal">
+                    <label for="radiocolor1">
+                        <input type="radio" name="color" id="radiocolor1">
+                        Azul Claro
+                    </label>
+                    <label for="radiocolor2">
+                        <input type="radio" name="color" id="radiocolor2">
+                        Verde Escuro
+                    </label>
+                    <label for="radiocolor3">
+                        <input type="radio" name="color" id="radiocolor3">
+                        Preto
+                    </label>
+               </div>
+
+            <h3 class="h3_com_borda_modal">Tamanho:</h3>
+
+               <div class="radioinput_tamanho_modal">
+                <label for="radiotamanho1">
+                    <input type="radio" name="tamanho" id="radiotamanho1">
+                    PP
+                </label>
+                <label for="radiotamanho2">
+                    <input type="radio" name="tamanho" id="radiotamanho2">
+                    P
+                </label>
+                <label for="radiotamanho3">
+                    <input type="radio" name="tamanho" id="radiotamanho3">
+                    M
+                </label>
+                <label for="radiotamanho4">
+                    <input type="radio" name="tamanho" id="radiotamanho4">
+                    G
+                </label>
+                <label for="radiotamanho5">
+                    <input type="radio" name="tamanho" id="radiotamanho5">
+                    GG
+                </label>
+
+               </div>
+
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_proprio_modal">Adicionar à sacola</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="material-symbols-outlined">
+          check_circle
+        </span>
+        <h5 class="modal-title" id="exampleModalLabel">  Confira detalhes sobre o produto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="container-imagem-modal">
+            <img src="_assets/_imagens/_produtosbombando/Tenis.png" alt="Tenis da categoria bombando">
+          </div>
+          <div class="produto-modal">
+            <h1>Tênis Chunky</h1>
+            <p>Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.</p>
+            <h2>R$ 250,00</h2>
+            <p class="text-black-50 p_borda_comolinha">Vendido e entregue por Riachuelo</p>
+
+            <h3>Cores:</h3>
+               <div class="radioinput_cores_modal">
+                    <label for="radiocolor1">
+                        <input type="radio" name="color" id="radiocolor1">
+                        Azul Claro
+                    </label>
+                    <label for="radiocolor2">
+                        <input type="radio" name="color" id="radiocolor2">
+                        Verde Escuro
+                    </label>
+                    <label for="radiocolor3">
+                        <input type="radio" name="color" id="radiocolor3">
+                        Preto
+                    </label>
+               </div>
+
+            <h3 class="h3_com_borda_modal">Tamanho:</h3>
+
+               <div class="radioinput_tamanho_modal">
+                <label for="radiotamanho1">
+                    <input type="radio" name="tamanho" id="radiotamanho1">
+                    37
+                </label>
+                <label for="radiotamanho2">
+                    <input type="radio" name="tamanho" id="radiotamanho2">
+                    38
+                </label>
+                <label for="radiotamanho3">
+                    <input type="radio" name="tamanho" id="radiotamanho3">
+                   39
+                </label>
+                <label for="radiotamanho4">
+                    <input type="radio" name="tamanho" id="radiotamanho4">
+                    40
+                </label>
+                <label for="radiotamanho5">
+                    <input type="radio" name="tamanho" id="radiotamanho5">
+                    41
+                </label>
+
+               </div>
+
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_proprio_modal">Adicionar à sacola</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="material-symbols-outlined">
+          check_circle
+        </span>
+        <h5 class="modal-title" id="exampleModalLabel">  Confira detalhes sobre o produto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="container-imagem-modal">
+            <img src="_assets/_imagens/_produtosbombando/Jaqueta.png" alt="Jaqueta da categoria bombando">
+          </div>
+          <div class="produto-modal">
+            <h1>Jaqueta Jeans</h1>
+            <p>Modelo unissex oversized com gola de camurça. Atemporal e autêntica!</p>
+            <h2>R$ 150,00</h2>
+            <p class="text-black-50 p_borda_comolinha">Vendido e entregue por Riachuelo</p>
+
+            <h3>Cores:</h3>
+               <div class="radioinput_cores_modal">
+                    <label for="radiocolor1">
+                        <input type="radio" name="color" id="radiocolor1">
+                        Azul Claro
+                    </label>
+                    <label for="radiocolor2">
+                        <input type="radio" name="color" id="radiocolor2">
+                        Verde Escuro
+                    </label>
+                    <label for="radiocolor3">
+                        <input type="radio" name="color" id="radiocolor3">
+                        Preto
+                    </label>
+               </div>
+
+            <h3 class="h3_com_borda_modal">Tamanho:</h3>
+
+               <div class="radioinput_tamanho_modal">
+                <label for="radiotamanho1">
+                    <input type="radio" name="tamanho" id="radiotamanho1">
+                    PP
+                </label>
+                <label for="radiotamanho2">
+                    <input type="radio" name="tamanho" id="radiotamanho2">
+                    P
+                </label>
+                <label for="radiotamanho3">
+                    <input type="radio" name="tamanho" id="radiotamanho3">
+                    M
+                </label>
+                <label for="radiotamanho4">
+                    <input type="radio" name="tamanho" id="radiotamanho4">
+                    G
+                </label>
+                <label for="radiotamanho5">
+                    <input type="radio" name="tamanho" id="radiotamanho5">
+                    GG
+                </label>
+
+               </div>
+
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_proprio_modal">Adicionar à sacola</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="material-symbols-outlined">
+          check_circle
+        </span>
+        <h5 class="modal-title" id="exampleModalLabel">  Confira detalhes sobre o produto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="container-imagem-modal">
+            <img src="_assets/_imagens/_produtosbombando/óculos.png" alt="Camiseta da categoria bombando">
+          </div>
+          <div class="produto-modal">
+            <h1>Óculos Redondo</h1>
+            <p>Armação metálica em grafite com lentes arredondadas. Sem erro!</p>
+            <h2>R$ 120,00</h2>
+            <p class="text-black-50 p_borda_comolinha">Vendido e entregue por Riachuelo</p>
+
+            <h3>Cores:</h3>
+               <div class="radioinput_cores_modal">
+                    <label for="radiocolor1">
+                        <input type="radio" name="color" id="radiocolor1">
+                        Azul Claro
+                    </label>
+                    <label for="radiocolor2">
+                        <input type="radio" name="color" id="radiocolor2">
+                        Verde Escuro
+                    </label>
+                    <label for="radiocolor3">
+                        <input type="radio" name="color" id="radiocolor3">
+                        Preto
+                    </label>
+               </div>
+
+            <h3 class="h3_com_borda_modal">Tamanho:</h3>
+
+               <div class="radioinput_tamanho_modal">
+                <label for="radiotamanho1">
+                    <input type="radio" name="tamanho" id="radiotamanho1">
+                    PP
+                </label>
+                <label for="radiotamanho2">
+                    <input type="radio" name="tamanho" id="radiotamanho2">
+                    P
+                </label>
+                <label for="radiotamanho3">
+                    <input type="radio" name="tamanho" id="radiotamanho3">
+                    M
+                </label>
+                <label for="radiotamanho4">
+                    <input type="radio" name="tamanho" id="radiotamanho4">
+                    G
+                </label>
+                <label for="radiotamanho5">
+                    <input type="radio" name="tamanho" id="radiotamanho5">
+                    GG
+                </label>
+
+               </div>
+
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_proprio_modal">Adicionar à sacola</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="material-symbols-outlined">
+          check_circle
+        </span>
+        <h5 class="modal-title" id="exampleModalLabel">  Confira detalhes sobre o produto</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <div class="container-imagem-modal">
+            <img src="_assets/_imagens/_produtosbombando/Bolsa.png" alt="Bolsa Coringa da categoria bombando">
+          </div>
+          <div class="produto-modal">
+            <h1>Bolsa coringa</h1>
+            <p>Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!</p>
+            <h2>R$ 120,00</h2>
+            <p class="text-black-50 p_borda_comolinha">Vendido e entregue por Riachuelo</p>
+
+            <h3>Cores:</h3>
+               <div class="radioinput_cores_modal">
+                    <label for="radiocolor1">
+                        <input type="radio" name="color" id="radiocolor1">
+                        Azul Claro
+                    </label>
+                    <label for="radiocolor2">
+                        <input type="radio" name="color" id="radiocolor2">
+                        Verde Escuro
+                    </label>
+                    <label for="radiocolor3">
+                        <input type="radio" name="color" id="radiocolor3">
+                        Preto
+                    </label>
+               </div>
+
+            <h3 class="h3_com_borda_modal">Tamanho:</h3>
+
+               <div class="radioinput_tamanho_modal">
+                <label for="radiotamanho1">
+                    <input type="radio" name="tamanho" id="radiotamanho1">
+                    PP
+                </label>
+                <label for="radiotamanho2">
+                    <input type="radio" name="tamanho" id="radiotamanho2">
+                    P
+                </label>
+                <label for="radiotamanho3">
+                    <input type="radio" name="tamanho" id="radiotamanho3">
+                    M
+                </label>
+                <label for="radiotamanho4">
+                    <input type="radio" name="tamanho" id="radiotamanho4">
+                    G
+                </label>
+                <label for="radiotamanho5">
+                    <input type="radio" name="tamanho" id="radiotamanho5">
+                    GG
+                </label>
+
+               </div>
+
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary btn_proprio_modal">Adicionar à sacola</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="exampleModalNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="material-symbols-outlined">
+          check_circle
+        </span>
+        <h5 class="modal-title" id="exampleModalLabel">E-mail cadastrado com sucesso!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p class="p_modal_novidades">Em breve você receberá novidades exclusivas da Meteora.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
