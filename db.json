@@ -1,0 +1,46 @@
+{
+    "produtos":[
+      {
+        "id": 1,
+        "titulo": "Camiseta Conforto",
+        "descricao": "Multicores e tamanhos. Tecido de algodão 100%,\n fresquinho para o verão. Modelagem unissex.",
+        "preco": "R$ 70,00",
+        "imagem": "_assets/_imagens/_produtosbombando/Camiseta.png"
+      },  
+      {
+        "id": 2,
+        "titulo": "Calça Alfaiataria",
+        "descricao": "Modelo Wide Leg alfaiataria em linho. Uma peça\n pra vida toda!",
+        "preco": "R$ 180,00",
+        "imagem": "_assets/_imagens/_produtosbombando/Calça.png"
+      },  
+      {
+        "id": 3,
+        "titulo": "Tênis Chunky",
+        "descricao": "Snicker casual com solado mais alto e modelagem\n robusta. Modelo unissex.",
+        "preco": "R$ 250,00",
+        "imagem": "_assets/_imagens/_produtosbombando/Tenis.png"
+      },  
+      {
+        "id": 4,
+        "titulo": "Jaqueta Jeans",
+        "descricao": "Modelo unissex oversized com gola de camurça. \nAtemporal e autêntica!",
+        "preco": "R$ 150,00",
+        "imagem": "_assets/_imagens/_produtosbombando/Jaqueta.png"
+      },  
+      {
+        "id": 5,
+        "titulo": "Óculos Redondo",
+        "descricao": "Armação metálica em grafite com lentes\n arredondadas. Sem erro!",
+        "preco": "R$ 120,00",
+        "imagem": "_assets/_imagens/_produtosbombando//óculos.png"
+      }, 
+      {
+        "id": 6,
+        "titulo": "Bolsa coringa",
+        "descricao": "Bolsa camel em couro sintético de alta duração.\n Ideal para acompanhar você por uma vida!",
+        "preco": "R$ 120,00",
+        "imagem": "_assets/_imagens/_produtosbombando/Bolsa.png"
+      }
+    ]
+}
