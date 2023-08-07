@@ -2,7 +2,7 @@ import { conectaApi } from "./conectaApi.js";
 
 const lista = document.querySelector("[data-produtos]");
 
-function constroiCard(titulo, descricao, preco, imagem, modalId){
+export function constroiCard(titulo, descricao, preco, imagem, modalId){
     const produto = document.createElement('li');
     produto.className = "produtos_item";
     // Substituir \n por <br> na descrição
@@ -16,14 +16,14 @@ function constroiCard(titulo, descricao, preco, imagem, modalId){
     return produto;
 }
 
-
-async function listaItem() {
+ async function listaItem() {
     const listaApi = await conectaApi.listaProdutos();
     listaApi.forEach(elemento => {
       let modalId = `#exampleModal${elemento.id}`; // Suponha que cada elemento tenha uma propriedade 'id'
       lista.appendChild(constroiCard(elemento.titulo, elemento.descricao, elemento.preco, elemento.imagem, modalId));
     });
   }
-  
 
 listaItem();
+
+

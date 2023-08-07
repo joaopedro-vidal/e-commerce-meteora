@@ -88,6 +88,11 @@
         line-height: normal;
         letter-spacing: 0.03rem;
     }
+
+    .btn_bombando:hover{
+        background-color: #ADFF2F;
+        color: #000;
+    }
 }
 
 @media(max-width: 1115px){

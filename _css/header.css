@@ -71,6 +71,7 @@ html{
     padding-left: 2rem;
     font-size: var(--fontsize--header);
     line-height: 1.4375rem;
+    cursor: pointer;
    }
 
    #caixa_pesquisa{
