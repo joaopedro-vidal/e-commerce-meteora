@@ -1,6 +1,6 @@
 const emailInput = document.getElementById('caixa_email');
 const submitButton = document.querySelector('.btn_novidades');
-const modalContainer = document.querySelector('.modal-container'); // Troque pelo seletor correto
+const modalContainer = document.querySelector('.modal-container'); 
 const msgError = document.querySelector('.msg_error_email');
 
 emailInput.addEventListener('input', () => {
