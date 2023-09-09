@@ -3,6 +3,7 @@
 # Getting Started:
 
 This project was developed as a challenge by Alura's technology school, which provided the entire project design through Figma.
+Link: https://e-commerce-meteora-8iayjz0ta-joaopedro-vidal.vercel.app/
 
 ## Currently, this project is designed for screens up to 1440px wide. Note: it will be updated soon.
 
